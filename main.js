@@ -13,7 +13,7 @@ const x = setInterval(function () {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     document.getElementById("counter").innerHTML = '<div class="box time">' + days + '</div><div class="box time">' + hours + '</div><div class="box time">' + minutes + '</div><div class="box time">' + seconds + '</div>';
     console.log(timeleft);
-    else if (timeleft <= 0) {
+    if (timeleft <= 0) {
         clearInterval(x);
         document.getElementById("counter").innerHTML = '<div class="fin-txt"><strong>디미 탈출!</strong></div>';
     }
