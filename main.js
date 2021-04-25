@@ -1,4 +1,4 @@
-const countDownDate = new Date("April 10, 2021 09:00:00").getTime()
+const countDownDate = new Date("May 4, 2021 14:00:00").getTime()
 const x = setInterval(function () {
     var time = new Date().getTime();
     var timeleft = countDownDate - time;
