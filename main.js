@@ -1,4 +1,4 @@
-const countDownDate = new Date("May 4, 2021 14:00:00").getTime()
+const countDownDate = new Date("June 4, 2021 17:00:00").getTime()
 const x = setInterval(function () {
     var time = new Date().getTime();
     var timeleft = countDownDate - time;
@@ -15,6 +15,6 @@ const x = setInterval(function () {
     console.log(timeleft);
     if (timeleft <= 0) {
         clearInterval(x);
-        document.getElementById("counter").innerHTML = '<div class="fin-txt"><strong>디미 탈출!</strong></div>';
+        document.getElementById("counter").innerHTML = '<div class="fin-txt"><strong>기상</strong></div>';
     }
 }, 1000);
